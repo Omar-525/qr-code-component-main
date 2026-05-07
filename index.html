@@ -8,21 +8,100 @@
   
   <title>Frontend Mentor | QR code component</title>
 
+  <!-- Font Link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Allura&family=Cairo:wght@200..1000&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kumbh+Sans:wght,YOPQ@100..900,300&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Tajawal:wght@200;300;400;500;700;800;900&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 0.6875rem; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Outfit";
+    }
+    body{
+      width: 100%;
+      height: 100vh;
+      background: rgb(213, 225, 239);
+      padding: 1px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .card{
+        background-color: hsl(0, 0%, 100%);
+        overflow: hidden;
+        text-align: center;
+        padding: 20px;
+        border-radius: 12px;
+        padding-bottom: 24px;
+      }
+      img{
+        width: 100%;
+        object-fit: contain;
+        border-radius: 12px;
+      }
+      .text-preset1{
+        color: #1f314f;
+        font-size: 22px;
+        line-height: 120%;
+        letter-spacing: 0px;
+        font-weight: bold;
+        margin-top: 16px;
+      }
+      .text-preset2{
+        color: #68778d;
+        font-size: 15px;
+        line-height: 140%;
+        letter-spacing: 0.2px;
+        font-weight: regular;
+        margin-top: 16px;
+      }
+    .attribution{
+      margin-top: 40px;
+      font-size: 15px;
+    }
+    @media (min-width: 376px){
+      .card{
+        width: 22%;
+        height: fit-content;
+      }
+    }
+
+    @media (max-width: 375px){
+      .card{
+        width: 80%;
+        height: fit-content;
+      }
+      .attribution{
+        width: 80%;
+        text-align: center;
+        margin-top: 24px;
+        font-size: 15px;
+      }
+    }
+    
+
   </style>
 </head>
 <body>
 
-  Improve your front-end skills by building projects
+    <div class="card">
+      <img src="images/image-qr-code.png" alt="qr-code">
+      <p class="text-preset1">Improve your front-end skills by building projects</p>
+      <p class="text-preset2">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+    </div>
+    
 
-  Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+    
   
-  <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </footer>
+    <footer class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/Omar-525">Omar Ahmed</a>.
+    </footer>
+  </div>
 </body>
 </html>
